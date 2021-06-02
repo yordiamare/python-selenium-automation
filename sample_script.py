@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # init driver
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path=r"C:\Users\yordi\Automation\python-selenium-automation\chromedriver.exe")
 driver.maximize_window()
 
 # open the url
@@ -24,3 +24,4 @@ assert 'dress' in driver.current_url.lower(), f"Expected query not in {driver.cu
 print('Test Passed')
 
 driver.quit()
+
