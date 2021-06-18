@@ -1,10 +1,5 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
-from selenium import webdriver
-
-driver = webdriver.Chrome(executable_path=r"C:\Users\yordi\Automation\python-selenium-automation\chromedriver.exe")
-driver.maximize_window()
-driver.implicitly_wait(5)
 
 @given('Open Amazon url')
 def open_amazon(context):

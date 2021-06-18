@@ -1,8 +1,6 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
-from selenium import webdriver
 
-driver = webdriver.Chrome(executable_path=r"C:\Users\yordi\Automation\python-selenium-automation\chromedriver.exe")
 @given('open Amazon page')
 def open_amazon(context):
     context.driver.get('https://www.amazon.com/')
