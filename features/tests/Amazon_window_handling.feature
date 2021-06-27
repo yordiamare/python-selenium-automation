@@ -7,5 +7,6 @@ Feature: Test for Amazon window handling
     And Click on Amazon Privacy Notice link
     And Switch to the newly opened window
     Then Verify Amazon Privacy Notice page is opened
+    And User can close new window and switch back to original
 
 

@@ -33,3 +33,10 @@ sleep(1)
 def verify_amazon_privacy_notice_page(context):
     sleep(1)
     context.driver.get('https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ')
+
+sleep(1)
+
+@then('User can close new window and switch back to original')
+def close_new_window(context):
+    sleep (1)
+    context.driver.close
