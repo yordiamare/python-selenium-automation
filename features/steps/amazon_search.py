@@ -3,17 +3,20 @@ from behave import given, when, then
 
 @given('open Amazon page')
 def open_amazon(context):
-    context.driver.get('https://www.amazon.com/')
+    #context.driver.get('https://www.amazon.com/')
+    context.app.main_page.open_main()
 
 
 @when('Input Table in search field')
 def search_amazon(context):
-    context.driver.find_element(By.ID, 'twotabsearchtextbox').send_keys('Table')
+    #context.driver.find_element(By.ID, 'twotabsearchtextbox').send_keys('Table')
+    context.app.Header.input_search()
 
 
 @when('Click on Amazon search icon')
 def click_search(context):
-    context.driver.find_element(By.ID, 'nav-search-submit-button').click()
+    #context.driver.find_element(By.ID, 'nav-search-submit-button').click()
+    context.app.Header.click_search()
 
 
 @then('Verify search_worked')

@@ -1,10 +1,10 @@
-from pages.header import header
-from pages.main_page import Main
+from Pages.amazon_header import Header
+from Pages.Main_page import Main
 
-class application():
+class application:
 
-    def__init__(self, driver):
+    def __init__(self, driver):
         self.driver = driver
 
         self.main_page = Main(self.driver)
-        self.header = header(self.driver)
+        self.Header = Header(self.driver)
