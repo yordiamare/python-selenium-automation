@@ -6,5 +6,8 @@ Feature: Test Amazon search
     Given Open Amazon page
     When Input Table in search field
     And Click on Amazon search icon
-    #Then Verify search_worked
+    Then Verify search_worked
+
+
+
 

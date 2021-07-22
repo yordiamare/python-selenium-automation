@@ -6,7 +6,6 @@ from behave import given, when, then
 def open_amazon(context):
     context.driver.get('https://www.amazon.com')
 
-
 @when('Search Water Bottle On Amazon')
 def search_water_bottle_on_the_bar(context):
     context.driver.find_element(By.ID, "twotabsearchtextbox").send_keys('Water Bottle')
